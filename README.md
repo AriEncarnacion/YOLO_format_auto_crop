@@ -7,6 +7,8 @@ Essentially, an image is cropped to the region outlined by a YOLO output boundin
 ## Usage
 **Note this script was built using python 3.7**
 
+This script requires os, cv2 and PIL packages be installed.
+
 Clone this repo and run the following command.
 
 ```python3 crop.py <path to directory holding YOLO format .txt files> <path to images> <desired save path>```
