@@ -9,10 +9,10 @@ Essentially, an image is cropped to the region outlined by a YOLO output boundin
 
 Clone this repo and run the following command.
 
-`python3 crop.py <path to directory holding YOLO format .txt files> <path to images> <desired save path>`
+```python3 crop.py <path to directory holding YOLO format .txt files> <path to images> <desired save path>```
 
 for example
 
-`python3 crop.py ~/Users/usr/labels/ ~/Users/usr/images/ ~/Users/usr/mySaveDir`
+```python3 crop.py ~/Users/usr/labels/ ~/Users/usr/images/ ~/Users/usr/mySaveDir```
 
 And you're done!
