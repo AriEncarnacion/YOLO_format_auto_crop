@@ -1,10 +1,10 @@
-## Automatic ROI Cropping System
+# Automatic ROI Cropping System
 
 This script crops an image to an ROI using YOLOv3 format .txt files, OpenCV and Pillow. 
 
 Essentially, an image is cropped to the region outlined by a YOLO output bounding box.
 
-### Usage
+## Usage
 **Note this script was built using python 3.7**
 
 Clone this repo and run the following command.
