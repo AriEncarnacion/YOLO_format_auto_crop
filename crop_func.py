@@ -34,7 +34,6 @@ def crop_func(file, all_labels, idx, new_path):
     print(F"start_x: {left}, end_x: {right}, start_y: {top}, end_y: {bottom}")
 
     crop_img = pil_im.crop((left, top, right, bottom))  # crop the image
-    print()
 
     crop_img.save(new_path + img_name)
     print("Saving at directory:", new_path)

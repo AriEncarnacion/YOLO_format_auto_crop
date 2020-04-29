@@ -21,18 +21,21 @@ for i in all_labels:
 
 print()
 
-new_path = save_path + "cropped/"
-try:
-    os.mkdir(new_path)
-except OSError:
-    print(F"Creation of the directory '{new_path}' failed.")
+print("Attempting to create cropped directory")
+if os.path.exists(save_path):
+    print(F"{save_path} already exists.")
 else:
-    print(F"Successfully created the directory '{new_path}'.")
+    try:
+        os.mkdir(save_path)
+    except OSError:
+        print(F"Creation of the directory '{save_path}' failed.")
+    else:
+        print(F"Successfully created the directory '{save_path}'.")
 
 print()
 
 idx = 0
 for file in data_dir:
     if file.endswith(".jpg"):
-        crop_func(file, all_labels, idx, new_path)
+        crop_func(file, all_labels, idx, save_path)
         idx += 1

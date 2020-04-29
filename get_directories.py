@@ -23,6 +23,4 @@ def get_directories(labels_path, data_path):
         img = data_dir[i]
         data_dir[i] = data_path + img
 
-    print(data_dir)
-
     return labels_dir, data_dir
