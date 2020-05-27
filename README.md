@@ -12,6 +12,7 @@ This script requires os, cv2 and PIL packages be installed.
 Clone this repo and run the following command.
 
 ```python3 crop.py <path to directory holding YOLO format .txt files> <path to images> <desired save path>```
+**Note each directory must end with a forward slash**
 
 for example
 
